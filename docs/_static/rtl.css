@@ -1,0 +1,10 @@
+body, .wy-nav-content, .rst-content, .wy-menu-vertical {
+    direction: rtl;
+    text-align: right;
+    font-family: "Vazir", Tahoma, "DejaVu Sans", Arial, "Liberation Sans", "Noto Sans", sans-serif;
+}
+
+/* اگر خواستی فونت فارسی خاص‌تری، فونت Vazir را دانلود و اضافه کن */
+.rst-content .section ul, .rst-content .section ol {
+    text-align: right;
+}
