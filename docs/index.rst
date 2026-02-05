@@ -22,3 +22,16 @@ Lab Readme Guidelines (مستندات راهنما)
    scenarios/example-docker-basic
    scenarios/example-cicd-pipeline
 
+.. toctree::
+   :maxdepth: 2
+   :caption: مروری بر پروژه
+
+   overview/index
+   roadmap
+   screenshots
+
+.. toctree::
+   :maxdepth: 2
+   :caption: شروع سریع
+
+   getting-started/index
