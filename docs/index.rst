@@ -29,12 +29,13 @@
    installation-guides/infra-providers/index
    installation-guides/config-settings/index
 
+
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: محتوای ورکشاپ
 
-   workshop-content/configuration
-   workshop-content/instructions
-   workshop-content/runtime
-   workshop-content/build-image
-   workshop-content/work-content
+   workshop-content/configuration/index
+   workshop-content/instructions/index
+   workshop-content/runtime/index
+   workshop-content/build-image/index
+   workshop-content/work-content/index   
