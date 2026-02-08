@@ -1,0 +1,12 @@
+/* پنهان کردن فوتر Sphinx و Read the Docs */
+.wy-nav-side .ethical-sidebar,  /* اگر تبلیغ بود */
+footer, 
+.footer, 
+#footer {
+  display: none !important;
+}
+
+/* پنهان کردن پیام Read the Docs پایین صفحه */
+.rst-footer-buttons { display: none !important; }
+.wy-nav-footer { display: none !important; }
+.related, .rst-footer-buttons { display: none !important; }

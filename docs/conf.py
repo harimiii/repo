@@ -7,8 +7,8 @@ import sys
 sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
-project = 'Lab Readme Guidelines'
-author = 'Your Name'
+project = 'راهنماي آزمايشگاه'
+author = 'داکرمي'
 release = '1.0'
 
 # -- General configuration ---------------------------------------------------
@@ -32,3 +32,8 @@ def setup(app):
 
 def setup(app):
     app.add_css_file('sidebar-rtl.css')
+
+
+
+def setup(app):
+    app.add_css_file('hide-footer.css')    
