@@ -1,3 +1,6 @@
+def setup(app):
+    app.add_css_file('custom-rtl.css')
+
 # -- Path setup --------------------------------------------------------------
 import os
 import sys

@@ -1,0 +1,38 @@
+/* انتقال سایدبار به راست - قابل استفاده با Sphinx RTD theme */
+
+.wy-nav-side {
+    right: 0 !important;
+    left: unset !important;
+    border-right: 1px solid #eaeaea;
+    border-left: none;
+    direction: rtl;
+}
+
+.wy-nav-content-wrap {
+    margin-left: 0 !important;
+    margin-right: 300px; /* عرض سایدبار */
+}
+
+.wy-side-scroll {
+    direction: rtl;
+}
+
+.wy-menu {
+    direction: rtl;
+}
+
+/* برای راست‌چین نوشتن فهرست منوها */
+.wy-menu-vertical {
+    text-align: right !important;
+}
+
+.wy-nav-top {
+    direction: rtl;
+    text-align: right !important;
+}
+
+/* متن محتوا هم راست‌چین */
+.rst-content {
+    direction: rtl;
+    text-align: right;
+}
