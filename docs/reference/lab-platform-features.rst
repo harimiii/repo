@@ -58,7 +58,7 @@
 
 
 .. image:: /_static/dockerme5.png
-   :alt: expires deadline overtime orphaned
+   :alt: refresh workshop
    :align: center
 
 
