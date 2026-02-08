@@ -1,17 +1,17 @@
 منابع سفارشی
 ============
 
-در این بخش با انواع منابع سفارشی برای ورکشاپ و پروژه آشنا خواهید شد.
+منابع پیشرفته برای تعریف، مدیریت و امنیت ورکشاپ‌ها و پلتفرم:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   workshop-definition
-   workshop-environment
-   workshop-request
-   workshop-session
-   training-portal
-   secret-copier
-   secret-exporter
-   secret-importer
-   secret-injector
+   workshop-definition/index
+   workshop-environment/index
+   workshop-request/index
+   workshop-session/index
+   training-portal/index
+   secret-copier/index
+   secret-exporter/index
+   secret-importer/index
+   secret-injector/index
