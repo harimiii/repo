@@ -45,8 +45,7 @@
    :maxdepth: 2
    :caption: راهنمای پروداکشن
 
-   production-guides/review-guidelines/index   
-   production-guides/platform-analysis
+   production-guides/index   
 
 .. toctree::
    :maxdepth: 2 
@@ -61,40 +60,3 @@
 
    reference/lab-platform-features   
 
-
-.. toctree::
-   :maxdepth: 1
-   :caption: ظرفیت و مقیاس‌پذیری
-
-   production-guides/capacity-and-scalability/index   
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: مدیریت چرخه حیات و Namespace
-
-   production-guides/lifecycle-and-namespace/index   
-
-.. toctree::
-   :maxdepth: 1
-   :caption: امنیت و ایزولاسیون
-
-   production-guides/security-and-isolation/index
-
-.. toctree::
-   :maxdepth: 1
-   :caption: ویژگی‌های پیشرفته
-
-   production-guides/advanced-impact-features/index
-
-.. toctree::
-   :maxdepth: 1
-   :caption: محدودیت‌ها و چالش‌ها
-
-   production-guides/platform-limitations/index
-
-.. toctree::
-   :maxdepth: 1
-   :caption: الگوهای پیشنهادی پیکربندی
-
-   production-guides/config-usecase-patterns/index   
