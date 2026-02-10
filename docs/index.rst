@@ -54,9 +54,4 @@
    custom-resources/index   
 
 
-.. toctree::
-   :maxdepth: 1
-   :caption: مرجع
-
-   reference/lab-platform-features   
 
