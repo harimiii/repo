@@ -45,7 +45,13 @@
    :maxdepth: 2
    :caption: راهنمای پروداکشن
 
-   production-guides/index   
+   production-guides/features-capacity-and-scalability/index
+   production-guides/features-lifecycle-and-namespace/index
+   production-guides/security-isolation/index
+   production-guides/advanced-impact-features/index
+   production-guides/platform-limitations/index
+   production-guides/config-usecase-patterns/index
+
 
 .. toctree::
    :maxdepth: 2 
