@@ -47,7 +47,6 @@
 
    production-guides/features-capacity-and-scalability/index
    production-guides/features-lifecycle-and-namespace/index
-   production-guides/security-isolation/index
    production-guides/advanced-impact-features/index
    production-guides/platform-limitations/index
    production-guides/config-usecase-patterns/index
