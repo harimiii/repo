@@ -4,8 +4,8 @@ import sys
 sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
-project = 'راهنماي آزمايشگاه'
-author = 'داکرمي'
+project = 'راهنمای آزمایشگاه‌ها'
+author = 'داکرمید'
 release = '1.0'
 
 # -- General configuration ---------------------------------------------------
@@ -13,19 +13,21 @@ extensions = [
     'myst_parser',
     'sphinx_rtd_theme'
 ]
+
 templates_path = ['_templates']
 exclude_patterns = []
 
-# تنظیم زبان فارسی و RTL
 language = 'fa'
 
 # -- Options for HTML output -------------------------------------------------
+
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
-
-def setup(app):
-    app.add_css_file('rtl.css')
-    app.add_css_file('sidebar-rtl.css')
-    app.add_css_file('hide-footer.css')
-    app.add_css_file('custom-rtl.css')
+html_css_files = [
+    'rtl.css',
+    'sidebar-rtl.css',
+    'hide-footer.css',
+    'custom-rtl.css',
+    'custom.css',  
+]

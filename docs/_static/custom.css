@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('fonts/Vazirmatn-Regular.woff2') format('woff2'),
+         url('fonts/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('fonts/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif !important;
+    direction: rtl;
+    text-align: right;
+}
+
+.wy-nav-content {
+    direction: rtl;
+    text-align: right;
+}
+
+.rst-content {
+    direction: rtl;
+    text-align: right;
+}
+
+.wy-menu-vertical {
+    direction: rtl;
+}
