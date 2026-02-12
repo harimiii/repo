@@ -1,16 +1,147 @@
+.. _creating-new-workshop:
+
 ساخت ورکشاپ جدید
 =================
 
-در این بخش، تمام مراحل لازم برای ایجاد، تنظیم، و مدیریت یک Workshop جدید توضیح داده می‌شود.
+در این بخش تمام مراحل لازم برای ایجاد، تنظیم، Deploy و مدیریت یک Workshop جدید توضیح داده می‌شود.
 
-.. toctree::
-   :maxdepth: 1
+--------------------------------------------------------------------
 
-   ایجاد ورکشاپ (Generating the workshop) <generate-workshop>
-   نمایش دستورالعمل‌ها (Rendering of Instructions) <render-instructions>
-   راه‌اندازی ورکشاپ جدید (Deploying new workshop) <deploy-workshop>
-   ساختار محتوای ورکشاپ (Workshop content layout) <content-layout>
-   دایرکتوری ریشه تمرین‌ها (Root directory for exercises) <root-directory>
-   ویرایش محتوای ورکشاپ (Modifying workshop content) <modify-content>
-   ویرایش تعریف ورکشاپ (Modifying workshop definition) <modify-definition>
-   حذف استقرار ورکشاپ (Deleting the deployment) <delete-deployment>
+.. _generate-workshop:
+
+ایجاد ورکشاپ (Generating the workshop)
+---------------------------------------
+
+برای ایجاد یک Workshop جدید، ابتدا باید ساختار اولیه آن را آماده کنید.
+این شامل تعریف فایل workshop.yaml و تنظیم مشخصات پایه Workshop می‌باشد.
+
+Workshop definition شامل مواردی مانند:
+
+- نام Workshop
+- تصویر container مورد استفاده
+- تنظیمات Session
+- منابع Kubernetes مورد نیاز
+
+پس از آماده‌سازی تعریف اولیه، می‌توان آن را در cluster بارگذاری کرد.
+
+--------------------------------------------------------------------
+
+.. _render-instructions:
+
+نمایش دستورالعمل‌ها (Rendering of Instructions)
+------------------------------------------------
+
+دستورالعمل‌های Workshop معمولاً به صورت Markdown یا Hugo-based Markdown نوشته می‌شوند.
+
+سیستم Rendering این فایل‌ها را به صورت صفحات تعاملی در Dashboard نمایش می‌دهد.
+
+نکات مهم:
+
+- استفاده از Hugo renderer توصیه می‌شود
+- دستورات قابل اجرا می‌توانند به صورت clickable تعریف شوند
+- امکان Copy-to-clipboard برای دستورات وجود دارد
+
+--------------------------------------------------------------------
+
+.. _deploy-new-workshop:
+
+راه‌اندازی ورکشاپ جدید (Deploying new workshop)
+-------------------------------------------------
+
+برای Deploy کردن Workshop از CLI استفاده می‌شود:
+
+::
+
+  educates deploy-workshop -f workshop.yaml
+
+پس از اجرا:
+
+- اگر Training Portal فعال نباشد ایجاد می‌شود
+- WorkshopEnvironment ساخته می‌شود
+- Workshop در Portal ثبت می‌شود
+
+--------------------------------------------------------------------
+
+.. _workshop-content-layout:
+
+ساختار محتوای ورکشاپ (Workshop content layout)
+-----------------------------------------------
+
+ساختار معمول محتوا به شکل زیر است:
+
+::
+
+  workshop/
+    exercises/
+    workshop.yaml
+    README.md
+
+پوشه exercises شامل تمرین‌ها و فایل‌های Markdown است.
+
+--------------------------------------------------------------------
+
+.. _root-directory-exercises:
+
+دایرکتوری ریشه تمرین‌ها (Root directory for exercises)
+--------------------------------------------------------
+
+تمرین‌ها در container معمولاً در مسیر HOME کاربر قرار می‌گیرند.
+
+بهتر است در مسیرها از:
+
+::
+
+  ~/ 
+  $HOME/
+
+استفاده شود تا وابسته به نام کاربر نباشد.
+
+--------------------------------------------------------------------
+
+.. _modify-workshop-content:
+
+ویرایش محتوای ورکشاپ (Modifying workshop content)
+---------------------------------------------------
+
+برای تغییر تمرین‌ها:
+
+- فایل‌های Markdown را ویرایش کنید
+- تصاویر یا فایل‌های اضافی اضافه کنید
+- تغییرات را مجدد Deploy کنید
+
+در محیط محلی می‌توان سریعاً تغییرات را تست کرد.
+
+--------------------------------------------------------------------
+
+.. _modify-workshop-definition:
+
+ویرایش تعریف ورکشاپ (Modifying workshop definition)
+-----------------------------------------------------
+
+فایل workshop.yaml شامل:
+
+- image
+- resources
+- session settings
+- ingress configuration
+
+پس از تغییر این فایل باید مجدد Deploy انجام شود.
+
+--------------------------------------------------------------------
+
+.. _delete-deployment:
+
+حذف استقرار ورکشاپ (Deleting the deployment)
+---------------------------------------------
+
+برای حذف Workshop اجرا کنید:
+
+::
+
+  educates delete-workshop -n workshop-name
+
+یا:
+
+::
+
+  educates delete-workshop -f workshop.yaml
