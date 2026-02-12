@@ -1,11 +1,7 @@
-شروع سریع
-=========
+راهنماي شروع سریع
+===========
 
 .. toctree::
    :maxdepth: 1
 
-   quick-start
-   create-workshop
-   templates
-   local-env
-   sample-workshops
+   راهنمای شروع سریع <quick-start/index>

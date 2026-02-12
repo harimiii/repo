@@ -15,3 +15,4 @@
    تغییرات پیش‌رو <roadmap/index#upcoming-changes>
 
    نمونه تصاویر محیط <environment-images/index>
+   نمونه اسکرین‌شات‌ها <sample-screenshots/index>
